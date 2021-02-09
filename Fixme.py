@@ -8,7 +8,6 @@ instead, you must use either the map and filter functions or list comprehensions
 def evens(n):
     '''
     Returns a list of even numbers from 0 to n inclusive.
-
     >>> evens(10)
     [0, 2, 4, 6, 8, 10]
     >>> evens(11)
@@ -26,7 +25,6 @@ def evens(n):
 def threes(n):
     '''
     Returns a list of all numbers from 0 to n inclusive that contain the digit 3.
-    
     >>> threes(2)
     []
     >>> threes(3)
@@ -63,7 +61,6 @@ def squares(n):
     '''
     Returns a list of all square number between 1 and n inclusive.
     Recall that the nth square number is defined to be n*n.
-
     >>> squares(1)
     [1]
     >>> squares(2)
@@ -78,7 +75,6 @@ def squares(n):
 def lengths(strings):
     '''
     Given a list of strings, returns a list of the lengths of the corresponding strings.
-
     >>> lengths([])
     []
     >>> lengths(['test'])
