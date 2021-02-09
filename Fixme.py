@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/sr/bin/python3
 '''
 Your solution for each function should be only a single line long.
 In particular, you may not use any loops when implementing these functions;
@@ -20,12 +20,12 @@ def evens(n):
     >>> evens(-1)
     []
     '''
-
+    return [num for num in range(0, n+1, 2)]
 
 def threes(n):
     '''
     Returns a list of all numbers from 0 to n inclusive that contain the digit 3.
-
+    
     >>> threes(2)
     []
     >>> threes(3)
@@ -37,7 +37,7 @@ def threes(n):
     >>> threes(50)
     [3, 13, 23, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43]
     '''
-
+    return [i for i in range(n+1) if str(i).__contains__('3')]
 
 def small_words(text):
     '''
@@ -72,7 +72,7 @@ def squares(n):
     >>> squares(10)
     [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
     '''
-
+    return [sq if sq == 0 else sq*sq for sq in range(1, n+1)] 
 
 def lengths(strings):
     '''
@@ -85,3 +85,4 @@ def lengths(strings):
     >>> lengths(['this','is','a','test'])
     [4, 2, 1, 4]
     '''
+    return [len(word) for word in strings if len(word) > 0]
